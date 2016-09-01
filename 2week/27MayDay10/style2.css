@@ -1,0 +1,26 @@
+body {
+  background-color: #ffcccc !important;
+  font-style: italic;
+  font-family: cursive;
+  color: #800000
+}
+
+#instruction {
+  color:white
+}
+
+.i {
+  background-color: yellow
+}
+
+li {
+  background-color: black;
+}
+
+ul > li {
+  background-color: gold;
+}
+
+img.food {
+  margin: 10px 
+}

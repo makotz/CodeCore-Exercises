@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Handy Tool</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="header">
+    <div class="hvr-float">
+  <%= link_to "Home", root_path %></div> |  <!-- <a href="<%= about_path %>">About Us</a>
+
+  <a href="<%= about_url %>">About Us</a> -->
+  <!-- link_to is a helper method within ails -->
+  <!-- class is for CSS, and id is just like html -->
+  <div class="hvr-float">
+  <%= link_to("Temp Converter", temp_converter_path)%></div> | <div class="hvr-float">
+  <%= link_to("Length Converter", length_path)%></div> | <div class="hvr-float">
+  <%= link_to("Bill Splitter", bill_splitter_path)%></div> | <div class="hvr-float">
+  <%= link_to("Pick a Winner", winner_path)%></div>
+  </div>
+  <hr>
+<%= yield %>
+
+</body>
+</html>

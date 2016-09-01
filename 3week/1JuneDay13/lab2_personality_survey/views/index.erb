@@ -1,0 +1,15 @@
+<h1>Hello World</h1>
+  <p>You work best:</p>
+  <form action = "/" method = "POST">
+      <input type = "radio" name = "Q1" value="With deadline">With deadline<br>
+      <input type = "radio" name = "Q1" value="Without deadline">Without deadline<br>
+    <p>You consider yourself more:</p>
+      <input type = "radio" name = "Q2" value="Rational">Rational<br>
+      <input type = "radio" name = "Q2" value="Compassionate">Compassionate<br>
+    <p>You are more interested in:</p>
+      <input type = "radio" name = "Q3" value="Ideas">Ideas<br>
+      <input type = "radio" name = "Q3" value="Facts">Facts<br>
+    <input type="submit" value="Test Me!">
+  </form>
+
+  <p><%= @result %></p>

@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  h1 New Question
+    form(method="POST" action="/questions")
+      .form-group(class= errors.title ? 'has-error' : '')
+        label(for="title") Title
+        input(id="title" name="title" type="text" class="form-control")
+        - if(errors.title)
+          .help-block = errors.title
+      .form-group
+        label(for="body") Body
+        textarea.form-control#body(name="body")
+      .form-group
+        input.btn.btn-primart(type="submit" value="Save")

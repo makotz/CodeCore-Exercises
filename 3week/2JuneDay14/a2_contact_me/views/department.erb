@@ -1,0 +1,51 @@
+<h1>Marketing</h1>
+<table style = "width: 100%">
+  <tr class="top">
+    <td>Name</td>
+    <td>Address</td>
+    <td>Message</td>
+  </tr>
+  <% $marketing.each do |x| %>
+  <tr>
+    <td><%= x[0] %></td>
+    <td><%= x[1] %></td>
+    <td><%= x[3] %></td>
+  </tr>
+  <% end %>
+</table>
+
+<h1>Sales</h1>
+<table style = "width: 100%">
+  <tr class="top">
+    <td>Name</td>
+    <td>Address</td>
+    <td>Message</td>
+  </tr>
+  <% $sales.each do |y| %>
+  <tr >
+    <td><%= y[0] %></td>
+    <td><%= y[1] %></td>
+    <td><%= y[3] %></td>
+  </tr>
+  <% end %>
+</table>
+
+<h1>Tech</h1>
+<table style = "width: 100%">
+  <tr class="top">
+    <td>Name</td>
+    <td>Address</td>
+    <td>Message</td>
+  </tr>
+  <% $tech.each do |x| %>
+  <tr>
+    <td><%= x[0] %></td>
+    <td><%= x[1] %></td>
+    <td><%= x[3] %></td>
+  </tr>
+  <% end %>
+</table>
+
+<form action="/" method="get">
+  <input type="submit" value="add more">
+</form>

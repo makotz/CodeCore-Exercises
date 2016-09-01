@@ -1,0 +1,15 @@
+<h1>Length Converter</h1>
+
+<%= form_tag length_path do %>
+Convert
+<%= text_field_tag :amount%>
+<%= select_tag(:from, options_for_select([['m', 0.001],['km', 1], ['mi', 1.6]])) %> to
+<%= select_tag(:to, options_for_select([['m', 0.001],['km', 1], ['mi', 1.6]])) %>
+<%= submit_tag "Convert" %>
+<% end %>
+<br>
+<% if @alert %>
+  <%= @alert %>
+  <% elsif @converted %>
+  <%= @converted%>
+<% end %>

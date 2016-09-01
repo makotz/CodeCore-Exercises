@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flex Box</title>
+    <style>
+      .parent {
+        border: 5px pink solid;
+        display: flex;
+        /*flex-direction: row-reverse;*/
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
+      }
+
+      .t-left {
+        flex: 50%;
+      }
+
+      .b-left {
+        flex: 50%;
+        
+      }
+
+      .b-right {
+        flex: 50%;
+
+      }
+
+      .item {
+        background-color: teal;
+        color: white;
+        text-align: center;
+        margin: 5px;
+        /*width: 30%;*/
+      }
+      .item:nth-child(5) {
+        background-color: red;
+        order: 5;
+        align-self: flex-end;
+        /*flex-shrink: 1;*/
+      }
+      .item:nth-child(1) {
+        background-color: purple;
+        order: 1;
+        align-self: flex-start;
+      }
+      .item:nth-child(3) {
+        background-color: purple;
+        order: 3;
+        align-self: flex-end;
+      }
+      .item:nth-child(2) {
+        background-color: purple;
+        order: 2;
+        align-self: stretch;
+      }
+      .item:nth-child(4) {
+        background-color: purple;
+        order: 4;
+        align-self: flex-stretch;
+      }
+
+      /* 5 1 3 2 4 */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="t-left">1</div>
+      <div class="t-right">2</div>
+      <div class="item">3</div>
+      <div class="b-left">4</div>
+      <div class="b-right">5</div>
+    </div>
+  </body>
+</html>

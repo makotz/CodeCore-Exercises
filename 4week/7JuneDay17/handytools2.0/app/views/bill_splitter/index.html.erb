@@ -1,0 +1,15 @@
+<h1>Bill Splitter</h1>
+
+<%= form_tag bill_splitter_path do %>
+  <div>
+  Amount: $<%= text_field_tag :amount, nil, :class => "box" %><br>
+  Tax: <%= text_field_tag :tax, nil, :class => "box"%>%<br>
+  Tip: <%= text_field_tag :tip, nil,  :class => "box"%>%<br>
+  Number of People: <%= text_field_tag :num %><br>
+  </div>
+  <%= submit_tag "Calculate" %>
+<% end %>
+
+<% if @divide %>
+$<%= @divide %>
+<% end %>

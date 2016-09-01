@@ -1,0 +1,13 @@
+<h1>Pick a Winner</h1>
+
+<%= form_tag winner_path do %>
+  Names: <%= text_area_tag :names %><br>
+  Num of Winners: <%= text_field_tag :num %><br>
+  <%= submit_tag "Pick Winner" %>
+<% end %>
+
+<% if @winnerarray %>
+  <% @winnerarray.each do |x| %>
+  <%= x %>
+  <% end %>
+<% end %>

@@ -1,0 +1,10 @@
+<div id="<%= dom_id(review) %>">
+  <%= review.start_count %>
+  <%= review.body %>
+  Likes: <%= review.likes.count %></div>
+  <div id="<%= dom_id(review)%>_like">
+    <%= render "/likes/like", review: review %>
+  </div>
+  <%= link_to "delete", product_review_path(@product, review), remote: true, method: :delete%>
+<hr>
+</div>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+          background-color: <%= session[:color]%>;
+        }
+    </style>
+  </head>
+  <body>
+    <a href="change_color/red">Red</a>
+    <a href="change_color/yellow">Yellow</a>
+    <a href="change_color/blue">Blue</a>
+    Hello <%= session[:name] %>
+    <%= yield %>
+  </body>
+</html>

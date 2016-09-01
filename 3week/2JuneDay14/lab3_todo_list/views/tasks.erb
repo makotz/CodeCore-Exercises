@@ -1,0 +1,9 @@
+<ul>
+<% session[:todo].each do |elm| %>
+<li><%= elm %>
+<% end %>
+</ul>
+
+<form action="/" method="get">
+  <input type="submit" value="add more stuff!">
+</form>

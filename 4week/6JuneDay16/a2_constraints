@@ -1,0 +1,2 @@
+As with any SQL, it must have a primary key that has the inherent qualities of not null and unique. The LineItem, Enrolment, and Project must also have a foreign key (does not have to be unique) that is able to link to orders, products, and students respectively.
+For each of the columns, it must also have a 'check' quality that makes sure that if its a price column, it must be a float. If its a name column, it will be a string.

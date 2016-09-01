@@ -1,0 +1,7 @@
+<div class="like-form">
+  <% if review.liked?(current_user) %>
+    <%= link_to "unlike", product_review_like_path(@product, review, review.like_for(current_user)), remote: true, method: :delete %>
+  <% else %>
+    <%= link_to "like", product_review_likes_path(@product, review), remote: true, method: :post%>
+  <% end %>
+</div>

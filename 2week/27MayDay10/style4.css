@@ -1,0 +1,9 @@
+body {
+  background: url("images/step.jpg");
+  background-size: 100%
+}
+
+h1.statement {
+  color: red;
+  text-align: center;
+}

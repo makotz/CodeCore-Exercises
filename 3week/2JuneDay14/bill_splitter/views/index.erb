@@ -1,0 +1,29 @@
+<h1>Bill Splitter</h2>
+
+<img src="/split.jpg">
+<form action="/split" method="Post">
+  <div>
+  <label for="amount">Amount:</label>
+  <input type="text" name="amount" id="amount" placeholder="e.g. 100" value="<%= @amount %>">
+  </div>
+  <div>
+    <label for="tax">Tax:</label>
+    <input type="text" name="tax" id="tax" placeholder="e.g. 10" value="<%= @tax %>">%
+  </div>
+  <div>
+  <label for="tip">Tip:</label>
+  <input type="text" name="tip" id="tip" placeholder="e.g. 15" value="<%= @tip %>">%
+  </div>
+  <div>
+    <label for="num-peeps">Number of people:</label>
+    <input type="text" name="num" id="num_peeps" placeholder="e.g. 5" value="<%= @num %>">
+  </div>
+  <input type="submit" value="Split!">
+</form>
+
+<% if @error %>
+<h2><%= @error %></h2>
+<% end %>
+<% if @portion %>
+<h2>Each person owes: $<%= @portion.round(2) %></h2>
+<% end %>

@@ -1,0 +1,190 @@
+body {
+    font-family: Lato, Trebuchet MS,Arial,sans-serif; 
+}
+
+
+dev.blue_side {
+    background-color: rgb(0, 25, 51);
+    width: 30%;
+    height: 97%;
+    border-radius: 0px;
+    position: fixed;
+    box-shadow: 10px 10px 10px #778899;
+    transition:all 0.3s ease;
+}
+
+img.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+    margin-top: 10%;
+    border: 5px solid white;
+    margin-top: 10%;
+    height: auto;
+    width: auto;
+    max-height: 90%;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10%;
+}
+dev.blue_side:hover {
+    background-color: #0A7E8C;
+    box-shadow: 5px 5px 5px #778899;
+
+}
+
+section.left {
+    color: white;
+    margin-left: 20%;
+}
+
+h2 {
+    text-align: center;
+}
+
+dev {border-radius: 10px;}
+
+
+/* Right side of the Resume */
+
+dev.white_side {
+    float: right;
+    width: 60%;
+    height: 100%;
+    margin-right: 5%}
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10px
+}
+
+h3 {
+    margin-left: 2%;
+    float: left;
+    margin-bottom: -5%
+}
+
+.topics {
+    margin-left: left;
+    color: white;
+}
+
+h4 {
+    text-align:right;
+    padding-top: 2%
+}
+
+hr {
+    background-color: #778899;
+    color: #778899
+}
+
+img.CJR {
+    opacity: 1.6;
+    width:5000px;
+    height:auto;
+    margin-left: 1000px;
+    margin-top: -260px;
+    transition:all 0.3s ease;
+
+}
+
+section.CJR:hover {
+    opacity:1;
+}
+
+/* Email Bob hover */
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+a.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+a.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+
+
+/*Prof pic MORPH*/
+
+img.morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+

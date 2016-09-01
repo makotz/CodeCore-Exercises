@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+  h1= product.title
+  p= product.body
+  form(action=`/products/${product.id}?_method=delete` method='post')
+    input(type='submit' value='Delete Product')
+  form(action=`/products/${product.id}?edit` method='get')
+    input(type='submit' value='Edit Product')
+  

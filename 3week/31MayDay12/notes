@@ -1,0 +1,23 @@
+Notes:
+
+Network Interface (link): transmitting signal
+
+Internet: Every server must have an IP addresses. There are public and private addresses.
+
+Domain Name System (DNS): converts "codecore.ca" to an IP address 23.226.230.108
+
+Transport Layer: how to package the data
+  TCP and UDP
+
+Application:
+  HTTP: not just a webpage but a transefer
+
+
+Server:
+  Infinite loop
+    Client/Server
+      -Client makes a request and is responded by server
+
+Ruby Gems:
+  Libraries of code
+  

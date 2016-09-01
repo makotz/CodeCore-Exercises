@@ -1,0 +1,22 @@
+<h2>Welcome ot the Calculator App</h2>
+
+<form action="/" method="POST">
+  <input type = "text" name = "val1" value = "<%= @val1 %>">
+  <select name = "execution">
+    <option value = "add" <%if @operation == "add"%>selected<% end %>>+</option>
+    <option value = "minus" <%if @operation == "minus"%>selected<% end %>>-</option>
+    <option value = "product" <%if @operation == "product"%>selected<% end %>>*</option>
+    <option value = "divide" <%if @operation == "divide"%>selected<% end %>>/</option>
+  </select>
+  <input type="text" name="val2" value = "<%= @val1 %>">
+  <input type="submit" value="add">
+</form>
+
+<p>Result is <%= @total %></p>
+
+<h2>History:</h2>
+<texarea rows=5 cols=50>
+<% $history.each do |item| %>
+  <%= item %><br>
+<% end %>
+</textarea>

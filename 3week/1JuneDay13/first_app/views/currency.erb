@@ -1,0 +1,9 @@
+<h1>Welcome to currency converter</h1>
+  <form action= "/currency" method="POST">
+    <input type="text" name="CAD" placeholder="CAD" value = "<%= @cad %>">
+    <input type="submit" value="Convert!">
+  </form>
+
+  <p>The conversion of $<%= @cad %> is $<%= @usd %></p>
+  <p>The conversion of $<%= @cad %> is &yen;<%= @yen %></p>
+  <p>The conversion of $<%= @cad %> is &pound;<%= @pnd %></p>

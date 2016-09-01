@@ -1,0 +1,56 @@
+$font-base: 1em
+$sans-serif: "Helvetica", Arial, san-serif
+$location: chicago
+$offset: left
+$distance: 20px
+$count: 4
+$full-width: 100%
+$distance-between: ($full-width / $count)
+
+.new
+  color: #ff7b29
+  font-weight: bold
+  font: $font-base $sans-serif
+span
+  text-transform: uppercase
+
+ul
+  li.nav
+    display: inline
+    float: left
+    width: $distance-between
+    a.item
+      color: none
+      &:hover
+        color: red
+body
+  background-color: red
+  @media screen and (max-width: 1080px)
+    background-color: orange
+  @media screen and (max-width: 980px)
+    background-color: yellow
+  @media screen and (max-width: 786px)
+    background-color: blue
+
+
+$tam: awesome
+$background-colors: red blue yellow
+$font-colors: green orange purple
+$classes: first-li second-li thrid-li
+
+.
+@for $i from 1 through 3
+
+
+.tam
+  @if $tam == awesome
+    background-color: nth($colors, 1)
+  @else if $tam == cool
+    background-color: nth($colors, 2)
+  @else
+    background-color: nth($colors, 3)
+
+ul
+  li
+    @for $i from 1 through 3
+      background-color: nth($colors, $i)

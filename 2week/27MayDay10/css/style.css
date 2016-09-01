@@ -1,0 +1,17 @@
+body {
+  background-color: lightgreen !important;
+  font-style: italic;
+  font-family: cursive;
+  color: white
+}
+
+a {
+  text-decoration: line-through;
+  color: orange;
+  font-size: 2em; 25px * 1
+}
+
+a:hover {
+  text-decoration: none;
+  color: lightblue
+}

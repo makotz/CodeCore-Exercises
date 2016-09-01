@@ -1,0 +1,12 @@
+
+
+
+
+
+number = 1
+
+def one_to_fifty
+  print number
+  number += 1
+  one_to_fifty  
+end

@@ -1,0 +1,3 @@
+Build a web application with Sinatra. Ask the user for year of car as input and then display "future", "new", "old" or "very old" based on the year entered from the user.
+
+Bonus: use case / when statement instead of if / else.

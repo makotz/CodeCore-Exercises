@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Awesome Answers Client</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="mustache.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <script id="question-template" type="x-tmpl-mustache">
+      <div class='question' data-id="{{id}}">
+        <a href='#'>{{title}} ({{view_count}})</a>
+      </div>
+    </script>
+
+    <script id="question-details-template" type="x-tmpl-mustache">
+      <div>
+        <h1>{{title}}</h1>
+        <p>{{body}}</p>
+        <p>Created at: {{created_at}}</p>
+        <p>View Count: {{view_count}}</p>
+        <hr>
+        <form id="answer-form" data-question-id="{{id}}">
+          <textarea id="body"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <hr>
+        <h2>Answers</h2>
+        <div id="answers"></div>
+      </div>
+    </script>
+
+    <script id="answer-template"  type="x-tmpl-mustache">
+      <div class="answer">
+        <p>{{body}}</p>
+      </div>
+    </script>
+
+    <h1>Awesome Answers</h1>
+    <div id="questions"></div>
+    <div id="question-details"></div>
+  </body>
+</html>

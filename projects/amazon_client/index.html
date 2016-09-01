@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Amazon Client</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="mustache.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <script id="product-template" type="x-tmpl-mustache">
+      <div class='product' data-id="{{id}}">
+        <a href="#">{{title}}</a>
+        <hr>
+      </div>
+    </script>
+
+    <script id="product-details-template" type="x-tmpl-mustache">
+      <div>
+      <p id="back-button">button</p>
+      <h1>{{title}}</h1>
+      <a class="button">button</a>
+      <p>Description: {{description}}</p>
+      <p>${{price}}</p>
+      <p>{{created_at}}</p>
+      </div>
+    </script>
+
+    <h1>Amazon Products</h1>
+    <div id="products"></div>
+    <div id="product-details"></div>
+  </body>
+</html>

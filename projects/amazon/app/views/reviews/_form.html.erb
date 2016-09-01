@@ -1,0 +1,11 @@
+<%= form_for [@product, @review], remote: true do |f| %>
+<div>
+Review it!
+  <%= f.text_area :body %>
+</div>
+<div>
+Rate it from 1 to 5:
+  <%= f.text_area :start_count %>
+</div>
+  <%= f.submit %>
+<% end %>

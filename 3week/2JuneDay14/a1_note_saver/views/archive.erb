@@ -1,0 +1,14 @@
+<form action="/" method="get">
+  <input type="submit" value="add more">
+</form>
+<br>
+<form action="/" method="post">
+  <input type="hidden" name ="_method" value="delete">
+<% $hash.each do |key, note| %>
+  <input type="radio" name="whichone?" value =<% $hash.each do |key, note| %> <%= "#{key}" %> <% end %>>
+  <%= "#{key}:"%><br><%= "#{note}"%>
+<br>
+<br>
+<% end %>
+<input type="submit" value="Delete me">
+</form>

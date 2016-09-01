@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+  h1 All products
+  each product in products
+    a(href='products/'+product._id)= product.title
+    hr

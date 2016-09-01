@@ -1,0 +1,8 @@
+<h2> Convert from &deg;C to &deg;F</h2>
+
+<form action= "/convert" method="POST">
+  <input type="text" name="temp_c">
+  <input type="submit" value="Convert!">
+</form>
+
+<p>The temperature of <%= @temp_c %>&deg; converts to <%= @temp_f %>&deg;F</p>
